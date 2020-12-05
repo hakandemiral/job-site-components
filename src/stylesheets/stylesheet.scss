@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Mulish', sans-serif;
+  
+    &:focus {
+      outline: 0;
+    }
+  }
+
+body {
+    background-color: #E7EAFB;
+    --text-color: #111127;
+}
+
+
+
+button.see-all {
+    width: 232px;
+    height: 71px;
+    margin: 15px;
+    border-radius: 10px;
+    background: #fff url(../assets/images/icons/right-arrow.svg) no-repeat 150px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 24px 35px 24px 45px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: 150ms background-position ease-in-out;
+
+    &:hover {
+        background-position: 160px;
+    }
+}
+
+.component {
+
+    &--job-search {
+        width: 300px;
+        height: 690px;
+        background-color: #fff;
+        margin: 15px;
+        padding: 30px;
+        border-radius: 20px;
+
+        input#search {
+            width: 240px;
+            height: 46px;
+            background: transparent url('../assets/images/icons/search.svg') no-repeat 8px;
+            padding: 0 20px 0 45px;
+            color: rgba(var(--text-color), .7);
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        hr {
+            width: 100%;
+            border-top: solid 1px #E7EAFB;
+            margin-bottom: 30px;
+        }
+
+        h5 {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            margin-bottom: 40px;
+            li {
+                
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+
+                    input {
+                        display: none;
+
+                        &:checked + .box{
+                            background-color: #8A9CFF;
+                            border: solid 2px #8A9CFF;
+                        }
+                    }
+    
+                    .box {
+                        display: inline-block;
+                        width: 27px;
+                        height: 27px;
+                        border: solid 2px #E7EAFB;
+                        border-radius: 5px;
+                        margin-right: 15px;
+                        transition: 300ms all ease-in-out;
+                        background: #fff url('../assets/images/icons/check.svg') no-repeat center;
+                    }
+                }
+            }
+        }
+
+        h6 {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        select {
+            display: block;
+            width: 100%;
+            height: 46px;
+            appearance: none;
+            border-radius: 8px;
+            border: solid 2px #E7EAFB;
+            padding-left: 20px;
+            color: var(--text-color);
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            height: 57px;
+            border-radius: 8px;
+            background-color: #8A9CFF;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            transition: 150ms background-color ease-in-out;
+
+            &:hover {
+                background-color: lighten($color: #8A9CFF, $amount: 5)
+            }
+        }
+
+    }
+
+    &--job-card {
+        width: 608px;
+        height: 290px;
+        border-radius: 20px;
+        padding: 50px;
+        background-color: #fff;
+        margin: 15px;
+
+        h2 {
+            font-size: 25.6px;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .description {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba($color: #111127, $alpha: .7);
+            margin-bottom: 24px;
+        }
+
+        p {
+            width: 504px;
+            height: 52px;
+            font-size: 18px;
+            line-height: 26px;
+            color: var(--text-color);
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            background-color: #E7EAFB;
+            padding: 7px 20px;
+            border-radius: 21.5px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(#111127, .8);
+        }
+    }
+
+    &--profile-cards {
+        width: 734px;
+        margin: 15px;
+
+        .card {
+            width: 100%;
+            height: 104px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 20px 46px 20px 20px;
+            background-color: #fff;
+            transition: 150ms transform ease-in-out;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            .profile-image {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                border: solid 2px #E7EAFB;
+                display: grid;
+                place-items: center;
+                font-size: 30px;
+                font-weight: 700;
+                color: #8A9CFF;
+                margin-right: 15px;
+            }
+
+            .who-is {
+                .name {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: var(--text-color);
+                    margin-bottom: 9px;
+                }
+                .job-title {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba($color: #111127, $alpha: .7);
+                }
+            }
+
+            .location {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+
+                img {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

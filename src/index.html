@@ -3,10 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Web Boilerplate</title>
+    <title>Job Site Components</title>
     <link rel="stylesheet" href="stylesheets/style.min.css">
 </head>
 <body>
+
+    <button class="see-all">See all jobs</button>
+
+    <div class="component--job-search">
+
+        <input type="text" placeholder="Search by keyword" id="search">
+
+        <hr>
+
+        <h5>JOB TYPES</h5>
+
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="box"></span>
+                    <span class="text">All</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="box"></span>
+                    <span class="text">Full Time</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="box"></span>
+                    <span class="text">Freelance</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="box"></span>
+                    <span class="text">Internship</span>
+                </label>
+            </li>
+            
+        </ul>
+
+        <h5>LOCATION</h5>
+
+        <h6>Country/Region</h6>
+
+        <select>
+            <option value="Turkey">Turkey</option>
+            <option value="Norway">Norway</option>
+            <option value="China">China</option>
+        </select>
+
+        <h6>City</h6>
+
+        <select>
+            <option value="Turkey">Turkey</option>
+            <option value="Norway">Norway</option>
+            <option value="China">China</option>
+        </select>
+
+        <button>Apply</button>
+
+    </div>
+
+    <div class="component--job-card">
+        <h2>Product Designer (UI/UX)</h2>
+        <span class="description">Product Designer (UI/UX)</span>
+        <p>We are looking for a ui/ux web designer to redesign our website which is a subscription snack box company.</p>
+        <span class="tag">UI Design</span>
+        <span class="tag">UX Design</span>
+        <span class="tag">Prototyping</span>
+    </div>
+
+    <div class="component--profile-cards">
+
+        <div class="card">
+            <div class="profile-image">H</div>
+            <div class="who-is">
+                <div class="name">Hakan</div>
+                <div class="job-title">Web Developer</div>
+            </div>
+            <div class="location">
+                <img src="./assets/images/icons/location.svg" alt="Location Icon">
+                <div class="text">Turkey</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="profile-image">İ</div>
+            <div class="who-is">
+                <div class="name">******</div>
+                <div class="job-title">🚬 🚬 🚬</div>
+            </div>
+            <div class="location">
+                <img src="./assets/images/icons/location.svg" alt="Location Icon">
+                <div class="text">Turkey</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="profile-image">H</div>
+            <div class="who-is">
+                <div class="name">Hakan</div>
+                <div class="job-title">Web Developer</div>
+            </div>
+            <div class="location">
+                <img src="./assets/images/icons/location.svg" alt="Location Icon">
+                <div class="text">Turkey</div>
+            </div>
+        </div>
+
+    </div>
+
     <script src="javascripts/app.min.js"></script>
 </body>
 </html>
